@@ -13,6 +13,9 @@ import javax.swing.JOptionPane;
  * @author SANDIP NAYAK
  */
 public class Tictac extends javax.swing.JFrame {
+
+    // INTEGER AND STRING DECLARE
+    
     private String startgame = "X";
     private int xcount = 0;
     private int ocount = 0;
@@ -23,6 +26,8 @@ public class Tictac extends javax.swing.JFrame {
     public Tictac() {
         initComponents();
     }
+
+        // PLAYER SCORE FUNCTION
     private void gamescore(){
         playerx.setText(String.valueOf(xcount));
         playero.setText(String.valueOf(ocount));
@@ -478,7 +483,9 @@ public class Tictac extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
-        // TODO add your handling code here:
+
+        // RESET BUTTON
+        
         t1.setText(null);
         t2.setText(null);
         t3.setText(null);
@@ -490,6 +497,8 @@ public class Tictac extends javax.swing.JFrame {
         b1.setText(null);
         b2.setText(null);
         b3.setText(null);
+
+        // RESET COLOUR
         
         t1.setBackground(Color.lightGray);
         t2.setBackground(Color.lightGray);
@@ -505,7 +514,8 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_resetActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        // TODO add your handling code here:
+        // EXIT BUTTON
+        
         JFrame frame = new JFrame("Exit");
         if (JOptionPane.showConfirmDialog(frame, "Confirm if you want Exit",
                 "Tic Tac",JOptionPane.YES_NO_OPTION)== JOptionPane.YES_NO_OPTION)
@@ -515,7 +525,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_exitActionPerformed
 
     private void t1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1ActionPerformed
-        // TODO add your handling code here:
+
+        // TOP 1 BUTTON FUNCTION
+        
         t1.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -528,8 +540,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_t1ActionPerformed
 
     private void t2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t2ActionPerformed
-
-        // TODO add your handling code here:
+    
+        // TOP 2 BUTTON FUNCTION
+        
         t2.setText(startgame);
         if(startgame.equalsIgnoreCase("X")){
             t2.setForeground(Color.red);
@@ -541,7 +554,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_t2ActionPerformed
 
     private void t3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t3ActionPerformed
-        // TODO add your handling code here:
+
+        // TOP 3 BUTTON FUNCTION
+        
         t3.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -554,7 +569,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_t3ActionPerformed
 
     private void m1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m1ActionPerformed
-        // TODO add your handling code here:
+
+        // MIDDLE 1 BUTTON FUNCTION
+        
         m1.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -567,7 +584,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_m1ActionPerformed
 
     private void m2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m2ActionPerformed
-        // TODO add your handling code here:
+
+        // MIDDLE 2 BUTTON FUNCTION
+        
          m2.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -580,7 +599,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_m2ActionPerformed
 
     private void m3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m3ActionPerformed
-        // TODO add your handling code here: m1.setText(startgame);
+
+        // MIDDLE 3 BUTTON FUNCTION
+        
        m3.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -593,7 +614,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_m3ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-        // TODO add your handling code here:
+
+        // BOTTOM 1 BUTTON FUNCTION
+        
         b1.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -606,7 +629,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-        // TODO add your handling code here:
+
+        // BOTTOM 2 BUTTON FUNCTION
+        
          b2.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
@@ -619,7 +644,9 @@ public class Tictac extends javax.swing.JFrame {
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-        // TODO add your handling code here:
+        
+        // BOTTOM 3 BUTTON FUNCTION
+        
          b3.setText(startgame);
         
         if(startgame.equalsIgnoreCase("X")){
